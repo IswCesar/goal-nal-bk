@@ -2,7 +2,7 @@
  * path: api/room
  */
 
-const { cleanRoom } = require("../controllers/rooms")
+const { cleanRoom } = require("../controllers/room")
 
 
 const { Router } = require("express");
