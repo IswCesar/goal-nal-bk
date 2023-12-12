@@ -91,4 +91,8 @@ io.on("connection", (client) => {
         io.emit('ballStopped', payload)
     });
 
+    client.on("goal-scored", async(payload) => {
+        io.emit('scoredGoal', payload)
+    });
+
 });
