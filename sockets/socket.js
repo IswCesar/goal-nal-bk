@@ -90,6 +90,9 @@ io.on("connection", (client) => {
     client.on("stop-ball", async(payload) => {
         io.emit('ballStopped', payload)
     });
+    client.on("boarder-touched", async(payload) => {
+        io.emit('touchedBoarder', payload)
+    });
 
     client.on("goal-scored", async(payload) => {
         io.emit('scoredGoal', payload)
